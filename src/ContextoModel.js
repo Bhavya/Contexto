@@ -15,7 +15,7 @@ class ContextoModel {
     train(text, context = 'default') {
         const words = text.toLowerCase().split(/\s+/);
         for (let i = 0; i < words.length; i++) {
-            for (let j = 1; j < this.n; j++) {
+            for (let j = 1; j <= this.n; j++) {
                 if (i + j <= words.length) {
                     const ngram = words.slice(i, i + j).join(' ');
                     const nextWord = words[i + j] || '<END>';
@@ -34,14 +34,14 @@ class ContextoModel {
         console.log(`Predicting for: "${phrase}" in context: ${context}`);
         const words = phrase.toLowerCase().split(/\s+/);
 
-        for (let i = this.n - 1; i > 0; i--) {
+        for (let i = this.n; i > 0; i--) {
             let ngram = words.slice(-i).join(' ');
             console.log(`Looking up ngram: "${ngram}"`);
             const possibilities = this.models[context][ngram];
 
             if (possibilities) {
                 const validPredictions = Object.entries(possibilities)
-                    .filter(([word]) => !excludeWords.includes(word))
+                    .filter(([word]) => !excludeWords.includes(word) && word !== '<END>')
                     .sort((a, b) => b[1] - a[1]);
 
                 if (validPredictions.length > 0) {
@@ -65,6 +65,8 @@ class ContextoModel {
 
     registerFunction(name, func, description) {
         this.functions[name] = { func, description };
+        this.train(`call ${name} function`, 'casual');
+        this.train(`call ${name} function`, 'formal');
         console.log(`Registered function: ${name}`);
     }
 
@@ -74,14 +76,28 @@ class ContextoModel {
         let response = [...currentPhrase];
         let usedWords = new Set(currentPhrase);
 
+        // Check if the input directly calls for a function
+        const callIndex = currentPhrase.indexOf('call');
+        if (callIndex !== -1 && callIndex + 1 < currentPhrase.length) {
+            const funcName = currentPhrase[callIndex + 1];
+            if (this.functions[funcName.toLowerCase()]) {
+                const result = this.functions[funcName.toLowerCase()].func(response.join(' '));
+                console.log(`Function call: ${funcName}, Result: ${result}`);
+                return `${response.join(' ')} [Function Call: ${funcName}] Result: ${result}`;
+            }
+        }
+
         while (response.length < maxLength) {
             const nextWord = this.predict(context, currentPhrase.join(' '), Array.from(usedWords));
-            if (!nextWord || nextWord === '<END>') break;
+            if (!nextWord) break;
 
-            if (this.functions[nextWord]) {
-                const result = this.functions[nextWord].func(response.join(' '));
-                console.log(`Function call: ${nextWord}, Result: ${result}`);
-                return `${response.join(' ')} [Function Call: ${nextWord}] Result: ${result}`;
+            if (nextWord === 'call' || nextWord === 'time' || this.functions[nextWord.toLowerCase()]) {
+                let funcName = nextWord === 'call' || nextWord === 'time' ? 'getTime' : nextWord;
+                if (this.functions[funcName.toLowerCase()]) {
+                    const result = this.functions[funcName.toLowerCase()].func(response.join(' '));
+                    console.log(`Function call: ${funcName}, Result: ${result}`);
+                    return `${response.join(' ')} ${nextWord} [Function Call: ${funcName}] Result: ${result}`;
+                }
             }
 
             response.push(nextWord);

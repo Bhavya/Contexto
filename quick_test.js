@@ -16,27 +16,29 @@ model.train('Wanna hang out tonight?', 'casual');
 model.train('This party is gonna be lit!', 'casual');
 model.train('I\'m so excited for the weekend.', 'casual');
 
-// Make predictions
-console.log('\nMaking predictions:');
-for (let i = 0; i < 3; i++) {
-    console.log('Formal context: "This is" →', model.predict('formal', 'This is'));
-    console.log('Formal context: "We regret to" →', model.predict('formal', 'We regret to'));
-    console.log('Casual context: "Hey, what\'s" →', model.predict('casual', 'Hey, what\'s'));
-    console.log('Casual context: "Catch you" →', model.predict('casual', 'Catch you'));
-}
+// Add specific training data for time-related queries
+model.train('What time is it now?', 'casual');
+model.train('Could you tell me the current time?', 'formal');
+model.train('Do you know what time it is?', 'casual');
+model.train('Would you be so kind as to provide the current time?', 'formal');
+model.train('Hey, can you check the time for me?', 'casual');
+model.train('Please call the gettime function.', 'formal');
+model.train('Let\'s call gettime to check the current time.', 'casual');
 
-// Generate responses
-console.log('\nGenerating responses:');
-console.log('Formal context: "We regret to inform you" →', model.generateResponse('formal', 'We regret to inform you', 15));
-console.log('Formal context: "Thank you for your" →', model.generateResponse('formal', 'Thank you for your', 15));
-console.log('Casual context: "Catch you later" →', model.generateResponse('casual', 'Catch you later', 15));
-console.log('Casual context: "This party is" →', model.generateResponse('casual', 'This party is', 15));
+// Register the getTime function
+model.registerFunction('gettime', () => new Date().toLocaleTimeString(), 'Get current time');
 
-// Register a function
-model.registerFunction('getTime', () => new Date().toLocaleTimeString(), 'Get current time');
-
-// Generate response with potential function call
-console.log('\nGenerating response with potential function call:');
+// Generate responses with potential function calls
+console.log('\nGenerating responses with potential function calls:');
 console.log('Casual context: "What time" →', model.generateResponse('casual', 'What time', 15));
+console.log('Formal context: "Could you tell me" →', model.generateResponse('formal', 'Could you tell me', 15));
+console.log('Casual context: "Hey, can you check" →', model.generateResponse('casual', 'Hey, can you check', 15));
+console.log('Formal context: "Would you be so kind" →', model.generateResponse('formal', 'Would you be so kind', 15));
+
+// Test direct function call trigger
+console.log('\nTesting direct function call trigger:');
+console.log('Casual context: "Call gettime function" →', model.generateResponse('casual', 'Call gettime function', 15));
+console.log('Formal context: "Please call the gettime function" →', model.generateResponse('formal', 'Please call the gettime function', 15));
+console.log('Casual context: "Let\'s call gettime" →', model.generateResponse('casual', 'Let\'s call gettime', 15));
 
 console.log('\nQuick test completed!');
