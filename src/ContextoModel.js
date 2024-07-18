@@ -6,10 +6,17 @@ class ContextoModel {
         this.contexts = contexts;
         this.models = {};
         this.functions = {};
+        this.debugMode = false;
 
         contexts.forEach(context => {
             this.models[context] = {};
         });
+    }
+
+    debugLog(...args) {
+        if (this.debugMode) {
+            console.log(...args);
+        }
     }
 
     train(text, context = 'default') {
@@ -27,16 +34,16 @@ class ContextoModel {
                 }
             }
         }
-        console.log(`Trained: "${text}" in context: ${context}`);
+        this.debugLog(`Trained: "${text}" in context: ${context}`);
     }
 
     predict(context, phrase, excludeWords = []) {
-        console.log(`Predicting for: "${phrase}" in context: ${context}`);
+        this.debugLog(`Predicting for: "${phrase}" in context: ${context}`);
         const words = phrase.toLowerCase().split(/\s+/);
 
         for (let i = this.n; i > 0; i--) {
             let ngram = words.slice(-i).join(' ');
-            console.log(`Looking up ngram: "${ngram}"`);
+            this.debugLog(`Looking up ngram: "${ngram}"`);
             const possibilities = this.models[context][ngram];
 
             if (possibilities) {
@@ -51,7 +58,7 @@ class ContextoModel {
                     for (const [word, count] of validPredictions) {
                         random -= count;
                         if (random <= 0) {
-                            console.log(`Predicted: "${word}"`);
+                            this.debugLog(`Predicted: "${word}"`);
                             return word;
                         }
                     }
@@ -59,7 +66,7 @@ class ContextoModel {
             }
         }
 
-        console.log('No valid prediction found');
+        this.debugLog('No valid prediction found');
         return null;
     }
 
@@ -67,11 +74,11 @@ class ContextoModel {
         this.functions[name] = { func, description };
         this.train(`call ${name} function`, 'casual');
         this.train(`call ${name} function`, 'formal');
-        console.log(`Registered function: ${name}`);
+        this.debugLog(`Registered function: ${name}`);
     }
 
     generateResponse(context, input, maxLength = 20) {
-        console.log(`Generating response for: "${input}" in context: ${context}`);
+        this.debugLog(`Generating response for: "${input}" in context: ${context}`);
         let currentPhrase = input.toLowerCase().split(/\s+/);
         let response = [...currentPhrase];
         let usedWords = new Set(currentPhrase);
@@ -82,7 +89,7 @@ class ContextoModel {
             const funcName = currentPhrase[callIndex + 1];
             if (this.functions[funcName.toLowerCase()]) {
                 const result = this.functions[funcName.toLowerCase()].func(response.join(' '));
-                console.log(`Function call: ${funcName}, Result: ${result}`);
+                this.debugLog(`Function call: ${funcName}, Result: ${result}`);
                 return `${response.join(' ')} [Function Call: ${funcName}] Result: ${result}`;
             }
         }
@@ -95,7 +102,7 @@ class ContextoModel {
                 let funcName = nextWord === 'call' || nextWord === 'time' ? 'getTime' : nextWord;
                 if (this.functions[funcName.toLowerCase()]) {
                     const result = this.functions[funcName.toLowerCase()].func(response.join(' '));
-                    console.log(`Function call: ${funcName}, Result: ${result}`);
+                    this.debugLog(`Function call: ${funcName}, Result: ${result}`);
                     return `${response.join(' ')} ${nextWord} [Function Call: ${funcName}] Result: ${result}`;
                 }
             }
@@ -105,7 +112,7 @@ class ContextoModel {
             currentPhrase = response.slice(-this.n + 1);
         }
 
-        console.log(`Generated response: "${response.join(' ')}"`);
+        this.debugLog(`Generated response: "${response.join(' ')}"`);
         return response.join(' ');
     }
 
@@ -120,7 +127,7 @@ class ContextoModel {
             }, {})
         };
         fs.writeFileSync(filename, JSON.stringify(data));
-        console.log(`Model saved to: ${filename}`);
+        this.debugLog(`Model saved to: ${filename}`);
     }
 
     load(filename) {
@@ -128,7 +135,7 @@ class ContextoModel {
         this.n = data.n;
         this.contexts = data.contexts;
         this.models = data.models;
-        console.log(`Model loaded from: ${filename}`);
+        this.debugLog(`Model loaded from: ${filename}`);
         // Note: Functions need to be re-registered after loading
     }
 }
