@@ -1,17 +1,25 @@
 {
-    "name": "contexto",
-    "version": "1.0.0",
-    "description": "A context-aware language model with function calling capabilities",
-    "main": "src/index.js",
-    "scripts": {
-      "test": "jest",
-      "start": "node src/index.js"
-    },
-    "keywords": ["nlp", "language-model", "context-aware", "function-calling"],
-    "author": "Your Name",
-    "license": "MIT",
-    "dependencies": {},
-    "devDependencies": {
-      "jest": "^27.0.0"
-    }
+  "name": "contexto-model",
+  "version": "1.0.0-beta.1",
+  "description": "A context-aware language model with function calling capabilities",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js"
+  },
+  "keywords": ["nlp", "language-model", "context-aware", "function-calling"],
+  "author": "Bhavya Kashyap",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bhavya/Contexto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bhavya/Contexto/issues"
+  },
+  "homepage": "https://github.com/Bhavya/Contexto#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.0"
   }
+}
