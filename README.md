@@ -1,52 +1,138 @@
-# Contexto
+# ContextoModel
 
-Contexto is a lightweight, context-aware language model with function calling capabilities. It allows you to train and use language models that are sensitive to different contexts and can execute functions based on the input.
+ContextoModel is an advanced, context-aware language model with function-calling capabilities, conversation history tracking, and stream-based response generation. It uses n-gram based prediction to generate contextually appropriate responses and can be trained on various contexts.
 
 ## Features
 
 - Context-aware language modeling
-- N-gram based prediction
+- N-gram based prediction with variable length
+- Conversation history tracking
+- Stream-based response generation
 - Function calling integration
+- Debug mode for detailed logging
 - Easy to train and use
-- Lightweight and efficient
+- Save and load model states
 
 ## Installation
 
+1. Clone this repository or copy the `ContextoModel.js` file into your project.
+2. Ensure you have Node.js installed on your system.
+3. Install the required dependencies:
+
 ```bash
-npm install contexto
+npm install
 ```
 
-## Quick Start
+## Usage
+
+### Importing the Model
 
 ```javascript
-const ContextoModel = require('contexto');
-
-// Create a new model
-const model = new ContextoModel(3, ['formal', 'casual']);
-
-// Train the model
-model.train("This is a formal business letter.", 'formal');
-model.train("Hey, what's up dude?", 'casual');
-
-// Make predictions
-console.log(model.predict('formal', 'This is a'));
-console.log(model.predict('casual', 'Hey, what's'));
-
-// Register a function
-model.registerFunction('getTime', () => new Date().toLocaleTimeString(), 'Get current time');
-
-// Generate a response with potential function calling
-console.log(model.generateResponse('casual', 'Hey, what time'));
+const ContextoModel = require('./path/to/ContextoModel');
 ```
 
-## Documentation
+### Creating a New Model
 
-For full documentation, please visit our [GitHub wiki](https://github.com/bhavya/contexto/wiki).
+```javascript
+const model = new ContextoModel(3, ['casual', 'formal'], 5);
+```
 
-## Contributing
+This creates a new model with trigrams (n=3), two contexts: 'casual' and 'formal', and a history size of 5.
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
+### Training the Model
+
+```javascript
+model.train("This is a sample sentence.", 'casual');
+```
+
+### Generating Responses
+
+```javascript
+const response = model.generateResponse('casual', "This is a", 20);
+console.log(response);
+```
+
+### Using Stream-based Response Generation
+
+```javascript
+const responseGenerator = model.generateResponseStream('casual', "This is a", 20);
+for (const partialResponse of responseGenerator) {
+    console.log(partialResponse);
+}
+```
+
+### Registering Functions
+
+```javascript
+model.registerFunction('getTime', () => new Date().toLocaleTimeString(), 'Get current time');
+```
+
+### Saving and Loading the Model
+
+```javascript
+// Saving
+model.save('model.json');
+
+// Loading
+model.load('model.json');
+```
+
+### Enabling Debug Mode
+
+```javascript
+model.debugMode = true;
+```
+
+## API Reference
+
+### `constructor(n, contexts = ['default'], historySize = 5)`
+
+Creates a new ContextoModel instance.
+
+- `n`: The n-gram size
+- `contexts`: An array of context names
+- `historySize`: Number of previous interactions to consider
+
+### `train(text, context = 'default')`
+
+Trains the model on the given text in the specified context.
+
+### `predict(context, phrase, excludeWords = [])`
+
+Predicts the next word given a context and a phrase.
+
+### `registerFunction(name, func, description)`
+
+Registers a function that can be called during response generation.
+
+### `generateResponse(context, input, maxLength = 20)`
+
+Generates a complete response given a context and an input phrase.
+
+### `*generateResponseStream(context, input, maxLength = 20)`
+
+Generates a response stream, yielding each part of the response as it's generated.
+
+### `filterResponse(response, input)`
+
+Filters the generated response to avoid repetition and improve coherence.
+
+### `save(filename)`
+
+Saves the current model state to a file.
+
+### `load(filename)`
+
+Loads a model state from a file.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+[MIT License](LICENSE)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Support
+
+If you have any questions or need help with using ContextoModel, please open an issue in the GitHub repository.
