@@ -1,12 +1,14 @@
 const fs = require('fs');
 
 class ContextoModel {
-    constructor(n, contexts = ['default']) {
+    constructor(n, contexts = ['default'], historySize = 5) {
         this.n = n;
         this.contexts = contexts;
         this.models = {};
         this.functions = {};
         this.debugMode = false;
+        this.contextHistory = []; // Track conversation history
+        this.historySize = historySize; // Number of previous interactions to consider
 
         contexts.forEach(context => {
             this.models[context] = {};
@@ -77,10 +79,69 @@ class ContextoModel {
         this.debugLog(`Registered function: ${name}`);
     }
 
-    generateResponse(context, input, maxLength = 20) {
+    *generateResponseStream(context, input, maxLength = 20) {
+        this.contextHistory.push(input); // Add to history
+        if (this.contextHistory.length > this.historySize) {
+            this.contextHistory.shift(); // Remove oldest if history exceeds size
+        }
+
+        // Create a combined context phrase from the history
+        const historyPhrase = this.contextHistory.join(' ').toLowerCase();
+
         this.debugLog(`Generating response for: "${input}" in context: ${context}`);
-        let currentPhrase = input.toLowerCase().split(/\s+/);
-        let response = [...currentPhrase];
+        let currentPhrase = historyPhrase.split(/\s+/);
+        let response = currentPhrase.slice(-this.n); // Use the last n words from history
+        let usedWords = new Set(currentPhrase);
+
+        // Check if the input directly calls for a function
+        const callIndex = currentPhrase.indexOf('call');
+        if (callIndex !== -1 && callIndex + 1 < currentPhrase.length) {
+            const funcName = currentPhrase[callIndex + 1];
+            if (this.functions[funcName.toLowerCase()]) {
+                const result = this.functions[funcName.toLowerCase()].func(response.join(' '));
+                this.debugLog(`Function call: ${funcName}, Result: ${result}`);
+                yield `${response.join(' ')} [Function Call: ${funcName}] Result: ${result}`;
+                return;
+            }
+        }
+
+        while (response.length < maxLength) {
+            const nextWord = this.predict(context, response.join(' '), Array.from(usedWords));
+            if (!nextWord) break;
+
+            if (nextWord === 'call' || nextWord === 'time' || this.functions[nextWord.toLowerCase()]) {
+                let funcName = nextWord === 'call' || nextWord === 'time' ? 'getTime' : nextWord;
+                if (this.functions[funcName.toLowerCase()]) {
+                    const result = this.functions[funcName.toLowerCase()].func(response.join(' '));
+                    this.debugLog(`Function call: ${funcName}, Result: ${result}`);
+                    yield `${response.join(' ')} ${nextWord} [Function Call: ${funcName}] Result: ${result}`;
+                    return;
+                }
+            }
+
+            response.push(nextWord);
+            usedWords.add(nextWord);
+            currentPhrase = response.slice(-this.n + 1);
+            yield response.join(' '); // Yield each part of the response as it is generated
+        }
+
+        const generatedResponse = response.join(' ');
+        this.debugLog(`Generated response: "${generatedResponse}"`);
+        yield this.filterResponse(generatedResponse, input);
+    }
+
+    generateResponse(context, input, maxLength = 20) {
+        this.contextHistory.push(input); // Add to history
+        if (this.contextHistory.length > this.historySize) {
+            this.contextHistory.shift(); // Remove oldest if history exceeds size
+        }
+
+        // Create a combined context phrase from the history
+        const historyPhrase = this.contextHistory.join(' ').toLowerCase();
+
+        this.debugLog(`Generating response for: "${input}" in context: ${context}`);
+        let currentPhrase = historyPhrase.split(/\s+/);
+        let response = currentPhrase.slice(-this.n); // Use the last n words from history
         let usedWords = new Set(currentPhrase);
 
         // Check if the input directly calls for a function
@@ -95,7 +156,7 @@ class ContextoModel {
         }
 
         while (response.length < maxLength) {
-            const nextWord = this.predict(context, currentPhrase.join(' '), Array.from(usedWords));
+            const nextWord = this.predict(context, response.join(' '), Array.from(usedWords));
             if (!nextWord) break;
 
             if (nextWord === 'call' || nextWord === 'time' || this.functions[nextWord.toLowerCase()]) {
@@ -112,8 +173,23 @@ class ContextoModel {
             currentPhrase = response.slice(-this.n + 1);
         }
 
-        this.debugLog(`Generated response: "${response.join(' ')}"`);
-        return response.join(' ');
+        const generatedResponse = response.join(' ');
+        this.debugLog(`Generated response: "${generatedResponse}"`);
+        return this.filterResponse(generatedResponse, input);
+    }
+
+    filterResponse(response, input) {
+        // Prevent the bot from repeating the user's input
+        if (response.trim() === input.trim()) {
+            return "I'm here to help. What else would you like to talk about?";
+        }
+
+        // Implement some basic filtering to avoid incoherent responses
+        if (response.includes('are great') && response.includes('are awesome')) {
+            return "I'm not sure I understand. Can you tell me more?";
+        }
+
+        return response;
     }
 
     save(filename) {

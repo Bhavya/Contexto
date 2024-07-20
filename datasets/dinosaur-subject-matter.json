@@ -1,0 +1,22 @@
+[
+    { "context": "default", "input": "Tell me about the T-Rex", "response": "The Tyrannosaurus rex, commonly known as T-Rex, was one of the largest meat-eating dinosaurs. It lived around 68 to 66 million years ago." },
+    { "context": "default", "input": "What did the T-Rex eat", "response": "The T-Rex was a carnivore, meaning it ate meat. It likely preyed on other large dinosaurs." },
+    { "context": "default", "input": "How big was the T-Rex", "response": "The T-Rex could grow up to 40 feet in length and stand 12 feet tall at the hips." },
+    { "context": "default", "input": "When did the dinosaurs go extinct", "response": "Dinosaurs went extinct about 65 million years ago, likely due to a massive asteroid impact and volcanic activity." },
+    { "context": "default", "input": "What is a Velociraptor", "response": "The Velociraptor was a small, feathered dinosaur that lived about 75 to 71 million years ago. It was a carnivore and known for its speed and agility." },
+    { "context": "default", "input": "How big was the Velociraptor", "response": "The Velociraptor was about 6 feet long and 1.6 feet tall at the hip, weighing up to 33 pounds." },
+    { "context": "default", "input": "What did the Velociraptor eat", "response": "The Velociraptor was a carnivore, likely hunting small dinosaurs and other animals." },
+    { "context": "default", "input": "Tell me about the Stegosaurus", "response": "The Stegosaurus was a large, plant-eating dinosaur known for its distinctive back plates and tail spikes. It lived around 155 to 150 million years ago." },
+    { "context": "default", "input": "What did the Stegosaurus eat", "response": "The Stegosaurus was a herbivore, meaning it ate plants. It likely fed on low-lying vegetation." },
+    { "context": "default", "input": "How big was the Stegosaurus", "response": "The Stegosaurus could grow up to 30 feet long and stand about 9 feet tall at the hips." },
+    { "context": "default", "input": "What is a Triceratops", "response": "The Triceratops was a herbivorous dinosaur known for its three horns and large bony frill. It lived around 68 to 66 million years ago." },
+    { "context": "default", "input": "How big was the Triceratops", "response": "The Triceratops could grow up to 30 feet long and weigh between 6 to 12 tons." },
+    { "context": "default", "input": "What did the Triceratops eat", "response": "The Triceratops was a herbivore, feeding on a variety of plants." },
+    { "context": "default", "input": "What was the largest dinosaur", "response": "The Argentinosaurus is considered one of the largest dinosaurs, measuring up to 100 feet in length and weighing up to 100 tons." },
+    { "context": "default", "input": "What was the smallest dinosaur", "response": "The smallest known dinosaur is the Compsognathus, which was about the size of a chicken, measuring around 3 feet in length." },
+    { "context": "default", "input": "How long did dinosaurs live", "response": "Dinosaurs lived for about 165 million years, from the Triassic period around 230 million years ago to the end of the Cretaceous period about 65 million years ago." },
+    { "context": "default", "input": "What are pterosaurs", "response": "Pterosaurs were flying reptiles that lived during the time of the dinosaurs, but they are not classified as dinosaurs. They were the first vertebrates known to have evolved powered flight." },
+    { "context": "default", "input": "What are ichthyosaurs", "response": "Ichthyosaurs were large marine reptiles that lived during the time of the dinosaurs. They are known for their fish-like shape and are not classified as dinosaurs." },
+    { "context": "default", "input": "What are plesiosaurs", "response": "Plesiosaurs were marine reptiles with long necks and flippers that lived during the time of the dinosaurs. They are not classified as dinosaurs." },
+    { "context": "default", "input": "What is the Jurassic period", "response": "The Jurassic period was the middle period of the Mesozoic Era, occurring from about 201 to 145 million years ago. It was known for the abundance of dinosaurs and the first appearance of birds." }
+]

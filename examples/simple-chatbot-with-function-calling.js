@@ -1,5 +1,27 @@
+/**
+ * Shop Assistant Chatbot
+ * ----------------------
+ * This example program demonstrates how to create a simple context-aware chatbot using an n-gram based language model.
+ * The chatbot can switch between 'casual' and 'formal' contexts and has a basic understanding of user input.
+ * 
+ * Features:
+ * - Context-aware responses: The chatbot can switch between 'casual' and 'formal' contexts based on user input.
+ * - Debug mode: Toggle debug mode on and off to log additional information for troubleshooting.
+ * - Function registration: The chatbot can call registered functions, such as getting the current time.
+ * - Dataset loading: Train the chatbot using a dataset loaded from a JSON file.
+ * 
+ * Usage:
+ * - Run the program: `node shop-assistant-chatbot.js`
+ * - Type "exit" to end the conversation.
+ * - Type "debug on" to enable debug mode or "debug off" to disable it.
+ * - Switch context by including the words "formal" or "casual" in your input.
+ * - The chatbot responds to user input based on the trained dataset and the current context.
+ *
+ */
+
 const readline = require('readline');
-const ContextoModel = require('./src/index');
+const ContextoModel = require('../src/index'); // Ensure this path is correct
+const fs = require('fs');
 
 // Debug mode flag
 let DEBUG_MODE = false;
@@ -11,39 +33,33 @@ function debugLog(...args) {
   }
 }
 
+// Create an interface for reading input from the console
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
-// Create the model
-const model = new ContextoModel(3, ['casual', 'formal']);
+// Initialize the context-aware model with n-gram size 3 and the 'casual' context
+const model = new ContextoModel(3, ['formal','casual']);
 
-// Enhanced training data
-const trainingData = [
-  { context: 'casual', input: "Hi", response: "Hey there! How's it going?" },
-  { context: 'casual', input: "Hey", response: "Hi! What's up?" },
-  { context: 'casual', input: "How are you", response: "I'm doing great, thanks for asking! How about you?" },
-  { context: 'casual', input: "What's up", response: "Not much, just chatting! What's new with you?" },
-  { context: 'casual', input: "Bye", response: "See you later! Take care!" },
-  { context: 'casual', input: "What time is it", response: "Let me check the time for you." },
-  { context: 'casual', input: "Tell me a joke", response: "Why don't scientists trust atoms? Because they make up everything!" },
-  { context: 'casual', input: "How's the weather", response: "I'm not sure, but I hope it's nice where you are!" },
-  { context: 'formal', input: "Hello", response: "Good day. How may I assist you?" },
-  { context: 'formal', input: "How are you", response: "I'm well, thank you for asking. How may I be of service?" },
-  { context: 'formal', input: "Goodbye", response: "Thank you for your time. Have a pleasant day." },
-  { context: 'formal', input: "What is the current time", response: "Certainly, I'd be happy to provide you with the current time." },
-  { context: 'formal', input: "Can you help me", response: "Of course, I'd be glad to assist you. What do you need help with?" },
-  { context: 'formal', input: "Thank you", response: "You're welcome. Is there anything else I can help you with?" },
-];
+// Load the dataset
+let trainingData;
+try {
+  const rawData = fs.readFileSync('../datasets/generic-chatbot.json');
+  trainingData = JSON.parse(rawData);
+  console.log('Dataset loaded successfully.');
+} catch (error) {
+  console.error('Error loading the dataset:', error);
+  process.exit(1);
+}
 
-// Train the model
+// Train the model using the dataset
 debugLog('Training the chatbot...');
 trainingData.forEach(item => {
   model.train(`${item.input} => ${item.response}`, item.context);
 });
 
-// Register the getTime function
+// Register a function to get the current time
 model.registerFunction('gettime', () => new Date().toLocaleTimeString(), 'Get current time');
 
 console.log('Chatbot is ready! Type "exit" to end the conversation.');
@@ -51,6 +67,7 @@ console.log('Type "debug on" to enable debug mode or "debug off" to disable it.'
 
 let context = 'casual'; // Default context
 
+// Function to generate a response based on user input
 function generateResponse(input) {
   const response = model.generateResponse(context, `${input} =>`, 30);
   const parts = response.split('=>');
@@ -60,6 +77,7 @@ function generateResponse(input) {
   return response;
 }
 
+// Main chat function
 function chat() {
   rl.question('You: ', (input) => {
     if (input.toLowerCase() === 'exit') {
@@ -67,7 +85,7 @@ function chat() {
       return;
     }
 
-    // Debug mode toggle
+    // Toggle debug mode
     if (input.toLowerCase() === 'debug on') {
       DEBUG_MODE = true;
       console.log("Debug mode enabled.");
@@ -80,7 +98,7 @@ function chat() {
       return;
     }
 
-    // Context switching
+    // Switch context based on user input
     if (input.toLowerCase().includes('formal')) {
       context = 'formal';
       console.log("Chatbot: Switching to formal context.");
@@ -89,18 +107,20 @@ function chat() {
       console.log("Chatbot: Switching to casual context.");
     }
 
+    // Generate and log the response
     debugLog(`Generating response for: "${input}" in context: ${context}`);
     let response = generateResponse(input);
     debugLog(`Generated response: "${response}"`);
 
-    // Check for time-related queries
+    // Check for time-related queries and append the current time if needed
     if (input.toLowerCase().includes('time') && !response.includes('[Function Call: gettime]')) {
       response += ` [Function Call: gettime] Result: ${new Date().toLocaleTimeString()}`;
     }
 
     console.log('Chatbot:', response);
 
-    chat(); // Continue the conversation
+    // Continue the conversation
+    chat();
   });
 }
 

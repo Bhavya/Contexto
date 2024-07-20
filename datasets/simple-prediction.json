@@ -1,0 +1,102 @@
+[
+    {
+        "context": "default",
+        "input": "How are you",
+        "response": "doing today"
+    },
+    {
+        "context": "default",
+        "input": "What is your",
+        "response": "name"
+    },
+    {
+        "context": "default",
+        "input": "I love to",
+        "response": "read books"
+    },
+    {
+        "context": "default",
+        "input": "Can you",
+        "response": "help me"
+    },
+    {
+        "context": "default",
+        "input": "Let's go",
+        "response": "to the park"
+    },
+    {
+        "context": "default",
+        "input": "The weather is",
+        "response": "really nice"
+    },
+    {
+        "context": "default",
+        "input": "I am feeling",
+        "response": "very happy"
+    },
+    {
+        "context": "default",
+        "input": "Do you want",
+        "response": "to play a game"
+    },
+    {
+        "context": "default",
+        "input": "What time",
+        "response": "is it"
+    },
+    {
+        "context": "default",
+        "input": "Where is the",
+        "response": "nearest store"
+    },
+    {
+        "context": "default",
+        "input": "How do you",
+        "response": "like your coffee"
+    },
+    {
+        "context": "default",
+        "input": "I can't believe",
+        "response": "it's already evening"
+    },
+    {
+        "context": "default",
+        "input": "This book",
+        "response": "is really interesting"
+    },
+    {
+        "context": "default",
+        "input": "Please tell me",
+        "response": "more about it"
+    },
+    {
+        "context": "default",
+        "input": "I am going to",
+        "response": "cook dinner"
+    },
+    {
+        "context": "default",
+        "input": "She is a",
+        "response": "very talented artist"
+    },
+    {
+        "context": "default",
+        "input": "He loves to",
+        "response": "play soccer"
+    },
+    {
+        "context": "default",
+        "input": "We should",
+        "response": "go for a walk"
+    },
+    {
+        "context": "default",
+        "input": "Do you like",
+        "response": "ice cream"
+    },
+    {
+        "context": "default",
+        "input": "The movie was",
+        "response": "really exciting"
+    }
+]
