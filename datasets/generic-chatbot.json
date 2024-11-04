@@ -1,0 +1,1422 @@
+[
+    {
+        "context": "casual",
+        "input": "Yo",
+        "response": "Hey! How's it going?"
+    },
+    {
+        "context": "casual",
+        "input": "Yo",
+        "response": "What's up?"
+    },
+    {
+        "context": "casual",
+        "input": "Yo",
+        "response": "Hi! What are you up to?"
+    },
+    {
+        "context": "casual",
+        "input": "Yo",
+        "response": "Hey there! How have you been?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm good",
+        "response": "That's great to hear! What's new?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm good",
+        "response": "Awesome! Got any plans for today?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm good",
+        "response": "Nice! What are you up to?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm fine",
+        "response": "Glad to hear that! What have you been doing?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm fine",
+        "response": "Good to know! What's on your mind?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm fine",
+        "response": "Cool! Anything interesting happening?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm well",
+        "response": "Awesome! How's your day going?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm well",
+        "response": "Great to hear! What's new with you?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm well",
+        "response": "Good to know! How have you been?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm okay",
+        "response": "That's good. Anything fun planned?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm okay",
+        "response": "Nice to hear! What are you up to?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm okay",
+        "response": "Alright! What's happening?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm great",
+        "response": "Fantastic! What's making your day great?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm great",
+        "response": "That's awesome! What's going on?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm great",
+        "response": "Nice! What are you excited about?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm happy",
+        "response": "Nice to hear! What's the good news?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm happy",
+        "response": "Great! What's making you happy?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm happy",
+        "response": "That's wonderful! What's up?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm feeling good",
+        "response": "Glad to hear! What's making you feel good?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm feeling good",
+        "response": "Nice! What are you up to?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm feeling good",
+        "response": "Awesome! What's new?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm alright",
+        "response": "Good to know! What's up?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm alright",
+        "response": "Cool! What's going on?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm alright",
+        "response": "Okay! How's your day?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm feeling fine",
+        "response": "That's great! What's happening?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm feeling fine",
+        "response": "Nice! What's new?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm feeling fine",
+        "response": "Good to hear! What's up?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm tired",
+        "response": "Oh no! Did you have a long day?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm tired",
+        "response": "Rest up! Anything I can do to help?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm tired",
+        "response": "Get some rest! Want to talk about your day?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm excited",
+        "response": "That's awesome! What's got you excited?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm excited",
+        "response": "Nice! What's happening?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm excited",
+        "response": "Cool! What are you looking forward to?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm sad",
+        "response": "I'm sorry to hear that. Want to talk about it?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm sad",
+        "response": "Oh no! What's wrong?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm sad",
+        "response": "That's tough. I'm here for you."
+    },
+    {
+        "context": "casual",
+        "input": "I'm bored",
+        "response": "Boredom strikes! Want some suggestions to pass the time?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm bored",
+        "response": "Let's find something fun to do! Any ideas?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm bored",
+        "response": "Time for some fun! What do you like doing?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm stressed",
+        "response": "I'm sorry to hear that. Anything I can do to help?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm stressed",
+        "response": "Stress is tough. Want to talk about it?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm stressed",
+        "response": "Take a deep breath. How can I assist?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm angry",
+        "response": "Oh no! What happened?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm angry",
+        "response": "That's tough. Want to vent?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm angry",
+        "response": "I'm here for you. Want to talk about it?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm confused",
+        "response": "Let's see if we can sort it out together. What's confusing you?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm confused",
+        "response": "I'm here to help. What's on your mind?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm confused",
+        "response": "Let's figure it out. What's the issue?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm nervous",
+        "response": "It's okay to feel nervous. What's on your mind?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm nervous",
+        "response": "Nerves are normal. Want to talk about it?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm nervous",
+        "response": "Deep breaths. What's making you nervous?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm anxious",
+        "response": "I'm here for you. Want to talk about it?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm anxious",
+        "response": "Anxiety is tough. How can I help?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm anxious",
+        "response": "I'm listening. What's on your mind?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm hungry",
+        "response": "Time for a snack! What are you craving?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm hungry",
+        "response": "Let's find some food! What's your favorite snack?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm hungry",
+        "response": "Food sounds good! What do you want to eat?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm thirsty",
+        "response": "Grab a drink! What's your favorite beverage?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm thirsty",
+        "response": "Time for a drink! What do you like?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm thirsty",
+        "response": "Get hydrated! What's your drink of choice?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm sick",
+        "response": "I'm sorry to hear that. Get well soon!"
+    },
+    {
+        "context": "casual",
+        "input": "I'm sick",
+        "response": "That's tough. Take care!"
+    },
+    {
+        "context": "casual",
+        "input": "I'm sick",
+        "response": "Rest up and feel better soon!"
+    },
+    {
+        "context": "casual",
+        "input": "Hi",
+        "response": "Hey there! How's it going?"
+    },
+    {
+        "context": "casual",
+        "input": "Hey",
+        "response": "Hi! What's up?"
+    },
+    {
+        "context": "casual",
+        "input": "How are you",
+        "response": "I'm doing great, thanks! How about you?"
+    },
+    {
+        "context": "casual",
+        "input": "What's up",
+        "response": "Not much, just chilling. What's new with you?"
+    },
+    {
+        "context": "casual",
+        "input": "Bye",
+        "response": "Catch you later! Take care!"
+    },
+    {
+        "context": "casual",
+        "input": "What time is it",
+        "response": "Let me check the time for you."
+    },
+    {
+        "context": "casual",
+        "input": "Tell me a joke",
+        "response": "Sure! Why don't scientists trust atoms? Because they make up everything!"
+    },
+    {
+        "context": "casual",
+        "input": "How's the weather",
+        "response": "I'm not sure, but I hope it's nice where you are!"
+    },
+    {
+        "context": "casual",
+        "input": "What are you doing",
+        "response": "Just hanging out and chatting with you. What about you?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like pizza",
+        "response": "Who doesn't love pizza? What's your favorite topping?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your name",
+        "response": "I'm your friendly chatbot! What's yours?"
+    },
+    {
+        "context": "casual",
+        "input": "Where are you from",
+        "response": "I'm from the digital world. How about you?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you have any pets",
+        "response": "I don't have pets, but I think they're adorable! Do you have any?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite movie",
+        "response": "I don't watch movies, but I've heard Inception is a great one! What's yours?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you play any games",
+        "response": "I don't play games, but I can recommend some if you like! What do you play?"
+    },
+    {
+        "context": "casual",
+        "input": "Can you sing",
+        "response": "I wish I could sing! Do you like singing?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite color",
+        "response": "I love all colors! What's yours?"
+    },
+    {
+        "context": "casual",
+        "input": "Tell me something interesting",
+        "response": "Sure! Did you know that honey never spoils? They found pots of honey in ancient Egyptian tombs that are still edible!"
+    },
+    {
+        "context": "casual",
+        "input": "What do you like to do",
+        "response": "I love chatting with you! What about you?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you have any hobbies",
+        "response": "I enjoy helping people like you. What are your hobbies?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite food",
+        "response": "I don't eat, but I've heard pizza is amazing! What's your favorite food?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite song",
+        "response": "I like all kinds of music! What's your favorite song?"
+    },
+    {
+        "context": "casual",
+        "input": "Can you dance",
+        "response": "I wish I could dance! Do you like dancing?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like sports",
+        "response": "I think sports are fascinating! Do you have a favorite sport?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite book",
+        "response": "I don't read books, but I've heard Harry Potter is great! What's your favorite book?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like traveling",
+        "response": "Traveling sounds fun! Have you been to any interesting places?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you speak any languages",
+        "response": "I can understand multiple languages! Which one would you like to chat in?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite season",
+        "response": "I like all seasons! What's your favorite?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite animal",
+        "response": "I think all animals are amazing! What's your favorite animal?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you have any siblings",
+        "response": "I don't have siblings, but I have many friends like you! Do you have siblings?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like reading",
+        "response": "Reading sounds wonderful! Do you have a favorite book?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite hobby",
+        "response": "I enjoy chatting with people! What's your favorite hobby?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite place",
+        "response": "I think the digital world is pretty cool! What's your favorite place?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like movies",
+        "response": "Movies are great! Do you have a favorite one?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite holiday",
+        "response": "I think all holidays are special! What's your favorite holiday?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like music",
+        "response": "Music is wonderful! Do you have a favorite genre?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like dancing",
+        "response": "Dancing sounds fun! Do you dance often?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite game",
+        "response": "Games are fun! Do you have a favorite one?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite TV show",
+        "response": "I don't watch TV, but I've heard Friends is a great show! What's your favorite?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like working out",
+        "response": "Working out sounds healthy! Do you work out often?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite sport",
+        "response": "Sports are exciting! Do you have a favorite sport?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like cooking",
+        "response": "Cooking sounds fun! Do you cook often?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your dream job",
+        "response": "I love being a chatbot! What's your dream job?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you have any goals",
+        "response": "I aim to be the best assistant! What are your goals?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite drink",
+        "response": "I don't drink, but I've heard coffee is popular! What's your favorite drink?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like art",
+        "response": "Art is beautiful! Do you have a favorite artist?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite flower",
+        "response": "I think all flowers are lovely! What's your favorite flower?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like gardening",
+        "response": "Gardening sounds relaxing! Do you garden often?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite fruit",
+        "response": "I think all fruits are tasty! What's your favorite fruit?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like technology",
+        "response": "Technology is fascinating! Do you enjoy using tech?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite vegetable",
+        "response": "I think all vegetables are healthy! What's your favorite vegetable?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like shopping",
+        "response": "Shopping can be fun! Do you shop often?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite dessert",
+        "response": "I think desserts are delicious! What's your favorite dessert?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like the beach",
+        "response": "The beach sounds lovely! Do you visit often?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite car",
+        "response": "I think cars are cool! Do you have a favorite model?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like hiking",
+        "response": "Hiking sounds adventurous! Do you hike often?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite quote",
+        "response": "There are many great quotes! Do you have a favorite one?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like the mountains",
+        "response": "Mountains are beautiful! Do you visit often?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite memory",
+        "response": "I cherish all moments! What's your favorite memory?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like skiing",
+        "response": "Skiing sounds thrilling! Do you ski often?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite ice cream flavor",
+        "response": "I think all ice cream flavors are tasty! What's your favorite?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like the city",
+        "response": "Cities are bustling! Do you enjoy city life?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite subject",
+        "response": "I think all subjects are interesting! What's your favorite subject?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like history",
+        "response": "History is fascinating! Do you have a favorite historical event?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite song lyric",
+        "response": "There are so many great lyrics! Do you have a favorite?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like science",
+        "response": "Science is amazing! Do you have a favorite scientific fact?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite sound",
+        "response": "I think all sounds are unique! What's your favorite sound?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like puzzles",
+        "response": "Puzzles are fun! Do you enjoy solving them?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite part of the day",
+        "response": "I enjoy all parts of the day! What's your favorite?"
+    },
+    {
+        "context": "casual",
+        "input": "Do you like sunsets",
+        "response": "Sunsets are beautiful! Do you enjoy watching them?"
+    },
+    {
+        "context": "casual",
+        "input": "What's your favorite planet",
+        "response": "I think all planets are fascinating! Do you have a favorite planet?"
+    },
+    {
+        "context": "casual",
+        "input": "I had a great day today",
+        "response": "That's awesome! What made your day so great?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm feeling a bit down",
+        "response": "I'm sorry to hear that. Want to talk about it?"
+    },
+    {
+        "context": "casual",
+        "input": "I love playing soccer",
+        "response": "That's cool! How often do you play?"
+    },
+    {
+        "context": "casual",
+        "input": "I just got a new job",
+        "response": "Congratulations! What's your new job about?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm learning to cook",
+        "response": "That's fantastic! What's the latest dish you made?"
+    },
+    {
+        "context": "casual",
+        "input": "I enjoy hiking",
+        "response": "Hiking is great! Do you have a favorite trail?"
+    },
+    {
+        "context": "casual",
+        "input": "I like reading books",
+        "response": "Books are amazing! What's the last book you read?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm a big fan of movies",
+        "response": "Movies are fun! Do you have a favorite genre?"
+    },
+    {
+        "context": "casual",
+        "input": "I recently traveled to Japan",
+        "response": "That sounds amazing! What was your favorite part of the trip?"
+    },
+    {
+        "context": "casual",
+        "input": "I love pets",
+        "response": "Pets are the best! Do you have any?"
+    },
+    {
+        "context": "casual",
+        "input": "I enjoy painting",
+        "response": "Painting is such a relaxing hobby! What do you like to paint?"
+    },
+    {
+        "context": "casual",
+        "input": "I like playing video games",
+        "response": "Video games are fun! What's your favorite game?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm interested in technology",
+        "response": "Tech is fascinating! Are you working on any cool projects?"
+    },
+    {
+        "context": "casual",
+        "input": "I like to swim",
+        "response": "Swimming is great exercise! Do you swim often?"
+    },
+    {
+        "context": "casual",
+        "input": "I enjoy photography",
+        "response": "Photography is such a creative outlet! What do you like to photograph?"
+    },
+    {
+        "context": "casual",
+        "input": "I like gardening",
+        "response": "Gardening is so peaceful! What do you grow?"
+    },
+    {
+        "context": "casual",
+        "input": "I enjoy traveling",
+        "response": "Traveling is the best! Where's your next destination?"
+    },
+    {
+        "context": "casual",
+        "input": "I love music",
+        "response": "Music is life! Do you play any instruments?"
+    },
+    {
+        "context": "casual",
+        "input": "I just watched a great movie",
+        "response": "That's awesome! What movie did you watch?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm learning a new language",
+        "response": "That's impressive! Which language are you learning?"
+    },
+    {
+        "context": "casual",
+        "input": "I like running",
+        "response": "Running is a great way to stay fit! How often do you run?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm into fashion",
+        "response": "Fashion is so fun! Do you have a favorite designer?"
+    },
+    {
+        "context": "casual",
+        "input": "I love baking",
+        "response": "Baking is so rewarding! What's your favorite thing to bake?"
+    },
+    {
+        "context": "casual",
+        "input": "I enjoy volunteering",
+        "response": "That's wonderful! Where do you volunteer?"
+    },
+    {
+        "context": "casual",
+        "input": "I like solving puzzles",
+        "response": "Puzzles are great for the brain! Do you prefer crosswords or jigsaws?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm a fan of comic books",
+        "response": "Comic books are awesome! Do you have a favorite series?"
+    },
+    {
+        "context": "casual",
+        "input": "I enjoy going to concerts",
+        "response": "Concerts are so much fun! Who did you see last?"
+    },
+    {
+        "context": "casual",
+        "input": "I like watching TV shows",
+        "response": "TV shows are great for unwinding! What's your current favorite?"
+    },
+    {
+        "context": "casual",
+        "input": "I love yoga",
+        "response": "Yoga is so relaxing! How often do you practice?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm interested in astronomy",
+        "response": "Astronomy is fascinating! Do you have a favorite planet or star?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm good",
+        "response": "That's great to hear! What are you up to?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm fine",
+        "response": "Glad to hear that! Anything interesting happening?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm well",
+        "response": "Awesome! Got any plans for today?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm doing well",
+        "response": "Good to know! What's new with you?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm okay",
+        "response": "That's good. Anything fun planned?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm great",
+        "response": "Fantastic! What's making your day great?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm happy",
+        "response": "Nice to hear! What's the good news?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm feeling good",
+        "response": "Glad to hear! What's making you feel good?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm alright",
+        "response": "Good to know! What's up?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm feeling fine",
+        "response": "That's great! Anything interesting happening?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm tired",
+        "response": "Oh no! Did you have a long day?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm excited",
+        "response": "That's awesome! What's got you excited?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm sad",
+        "response": "I'm sorry to hear that. Want to talk about it?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm bored",
+        "response": "Boredom strikes! Want some suggestions to pass the time?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm stressed",
+        "response": "I'm sorry to hear that. Anything I can do to help?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm angry",
+        "response": "Oh no! What happened?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm confused",
+        "response": "Let's see if we can sort it out together. What's confusing you?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm nervous",
+        "response": "It's okay to feel nervous. What's on your mind?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm anxious",
+        "response": "I'm here for you. Want to talk about it?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm hungry",
+        "response": "Time for a snack! What are you craving?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm thirsty",
+        "response": "Grab a drink! What's your favorite beverage?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm sick",
+        "response": "I'm sorry to hear that. Get well soon!"
+    },
+    {
+        "context": "casual",
+        "input": "I'm feeling better",
+        "response": "Glad to hear you're feeling better! What helped?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm ready",
+        "response": "Awesome! What are we doing next?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm curious",
+        "response": "Curiosity is great! What are you curious about?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm hopeful",
+        "response": "That's a positive outlook! What are you hoping for?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm lucky",
+        "response": "Lucky you! What happened?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm determined",
+        "response": "That's the spirit! What's your goal?"
+    },
+    {
+        "context": "casual",
+        "input": "I'm motivated",
+        "response": "Fantastic! What's driving your motivation?"
+    },
+    {
+        "context": "formal",
+        "input": "Hello",
+        "response": "Good day. How may I assist you?"
+    },
+    {
+        "context": "formal",
+        "input": "How are you",
+        "response": "I'm well, thank you for asking. How may I help you today?"
+    },
+    {
+        "context": "formal",
+        "input": "Goodbye",
+        "response": "Thank you for your time. Have a pleasant day."
+    },
+    {
+        "context": "formal",
+        "input": "What is the current time",
+        "response": "Certainly, I'll provide the current time for you."
+    },
+    {
+        "context": "formal",
+        "input": "Can you help me",
+        "response": "Of course, I'm here to help. What do you need assistance with?"
+    },
+    {
+        "context": "formal",
+        "input": "Thank you",
+        "response": "You're welcome. Is there anything else I can assist you with?"
+    },
+    {
+        "context": "formal",
+        "input": "I need assistance",
+        "response": "Absolutely, I'm here to provide assistance. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "May I have your attention",
+        "response": "Certainly, you have my full attention. How can I assist you?"
+    },
+    {
+        "context": "formal",
+        "input": "Please provide me with information",
+        "response": "I'd be happy to provide you with the information you need. What would you like to know?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you check that for me",
+        "response": "Certainly, I'll check that for you right away."
+    },
+    {
+        "context": "formal",
+        "input": "What services do you offer",
+        "response": "I offer a variety of services, including information retrieval, scheduling, and general assistance. How may I assist you today?"
+    },
+    {
+        "context": "formal",
+        "input": "Is there anything else",
+        "response": "I'm here to help with any additional needs you may have. What else can I do for you?"
+    },
+    {
+        "context": "formal",
+        "input": "May I ask a question",
+        "response": "Of course, please feel free to ask any questions you may have."
+    },
+    {
+        "context": "formal",
+        "input": "Do you have any recommendations",
+        "response": "I'd be delighted to offer recommendations. What are you interested in?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you confirm",
+        "response": "Yes, I can confirm that for you. Please hold on a moment."
+    },
+    {
+        "context": "formal",
+        "input": "What is your name",
+        "response": "I am your dedicated virtual assistant. How may I address you?"
+    },
+    {
+        "context": "formal",
+        "input": "May I assist you",
+        "response": "Certainly, I'm here to assist you. How may I be of service?"
+    },
+    {
+        "context": "formal",
+        "input": "Please wait a moment",
+        "response": "Of course, please hold on for a moment."
+    },
+    {
+        "context": "formal",
+        "input": "What can you do",
+        "response": "I can assist with various tasks, including providing information and answering questions. How may I assist you today?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you give me directions",
+        "response": "Certainly, I can provide directions. Where would you like to go?"
+    },
+    {
+        "context": "formal",
+        "input": "May I know your availability",
+        "response": "I'm available to assist you at any time. How can I help you today?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you repeat that",
+        "response": "Certainly, I will repeat the information for you."
+    },
+    {
+        "context": "formal",
+        "input": "What is your expertise",
+        "response": "I specialize in providing assistance and information. How may I be of service?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you explain that",
+        "response": "Of course, I'd be happy to explain. What would you like to know more about?"
+    },
+    {
+        "context": "formal",
+        "input": "What are your capabilities",
+        "response": "I am capable of assisting with a wide range of tasks. How can I help you today?"
+    },
+    {
+        "context": "formal",
+        "input": "Do you have any suggestions",
+        "response": "I'd be pleased to offer suggestions. What are you looking for?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you assist me with this",
+        "response": "Certainly, I'd be happy to help. What do you need assistance with?"
+    },
+    {
+        "context": "formal",
+        "input": "May I request your assistance",
+        "response": "Of course, I'm here to assist. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you provide me with details",
+        "response": "Certainly, I can provide the details. What information do you require?"
+    },
+    {
+        "context": "formal",
+        "input": "What is your purpose",
+        "response": "My purpose is to assist with any inquiries or tasks you may have. How can I help you today?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you verify that",
+        "response": "Yes, I can verify that for you. Please hold on a moment."
+    },
+    {
+        "context": "formal",
+        "input": "What is your function",
+        "response": "My function is to provide assistance and information. How may I assist you?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you help with my request",
+        "response": "Certainly, I would be happy to help with your request. What do you need assistance with?"
+    },
+    {
+        "context": "formal",
+        "input": "May I inquire",
+        "response": "Of course, you may inquire. What would you like to know?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you assist with my inquiry",
+        "response": "Certainly, I'm here to assist with your inquiry. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you help with my issue",
+        "response": "Yes, I can help with your issue. What seems to be the problem?"
+    },
+    {
+        "context": "formal",
+        "input": "May I seek your assistance",
+        "response": "Certainly, I'm here to assist you. How may I help?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you clarify that",
+        "response": "Yes, I can clarify that for you. What do you need clarification on?"
+    },
+    {
+        "context": "formal",
+        "input": "What is your role",
+        "response": "My role is to provide assistance and information. How may I be of service?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you assist with my task",
+        "response": "Certainly, I can assist with your task. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "May I ask for your help",
+        "response": "Of course, I'm here to help. What do you need assistance with?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you provide support",
+        "response": "Yes, I can provide support. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "May I have assistance",
+        "response": "Certainly, I'm here to assist you. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "What are your hours of operation",
+        "response": "I'm available to assist you 24/7. How may I help you?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you give me more information",
+        "response": "Of course, I'd be happy to provide more information. What would you like to know?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you provide a summary",
+        "response": "Certainly, I can provide a summary. What information would you like summarized?"
+    },
+    {
+        "context": "formal",
+        "input": "May I receive an update",
+        "response": "Of course, I can provide an update. What would you like to know?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you assist me further",
+        "response": "Certainly, I'm here to assist you further. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "What is the status",
+        "response": "I will check the status for you. Please hold on a moment."
+    },
+    {
+        "context": "formal",
+        "input": "Can you help with my project",
+        "response": "Yes, I can help with your project. What do you need assistance with?"
+    },
+    {
+        "context": "formal",
+        "input": "May I know more about this",
+        "response": "Certainly, I can provide more details. What would you like to know?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you explain in detail",
+        "response": "Of course, I'd be happy to explain in detail. What would you like to know more about?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you confirm the details",
+        "response": "Yes, I can confirm the details for you. Please hold on a moment."
+    },
+    {
+        "context": "formal",
+        "input": "May I have more information",
+        "response": "Certainly, I can provide more information. What do you need?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you assist with this matter",
+        "response": "Certainly, I'm here to assist with this matter. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you provide more details",
+        "response": "Yes, I can provide more details. What information do you need?"
+    },
+    {
+        "context": "formal",
+        "input": "May I request more details",
+        "response": "Of course, I can provide more details. What would you like to know?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you help with this issue",
+        "response": "Certainly, I'm here to help with this issue. What do you need assistance with?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you provide a brief overview",
+        "response": "Yes, I can provide a brief overview. What information do you need?"
+    },
+    {
+        "context": "formal",
+        "input": "May I ask for clarification",
+        "response": "Certainly, I'm here to provide clarification. What do you need clarification on?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you provide assistance",
+        "response": "Certainly, I'm here to provide assistance. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you help clarify",
+        "response": "Yes, I can help clarify that for you. What do you need clarification on?"
+    },
+    {
+        "context": "formal",
+        "input": "May I request your help",
+        "response": "Of course, I'm here to help. What do you need assistance with?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you provide an explanation",
+        "response": "Certainly, I can provide an explanation. What would you like to know more about?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you assist with my query",
+        "response": "Yes, I can assist with your query. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "May I ask for your assistance",
+        "response": "Of course, I'm here to assist you. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you provide further details",
+        "response": "Certainly, I can provide further details. What do you need to know?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you give more information",
+        "response": "Yes, I can give you more information. What would you like to know?"
+    },
+    {
+        "context": "formal",
+        "input": "May I ask for further assistance",
+        "response": "Certainly, I'm here to provide further assistance. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you clarify the details",
+        "response": "Yes, I can clarify the details for you. What do you need clarification on?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you assist with this request",
+        "response": "Certainly, I can assist with this request. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "May I have your help",
+        "response": "Of course, I'm here to help. What do you need assistance with?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you provide a detailed explanation",
+        "response": "Certainly, I can provide a detailed explanation. What would you like to know more about?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you assist with my concern",
+        "response": "Yes, I can assist with your concern. What seems to be the problem?"
+    },
+    {
+        "context": "formal",
+        "input": "May I request more information",
+        "response": "Certainly, I can provide more information. What do you need?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you help me with this",
+        "response": "Certainly, I'm here to help you. What do you need assistance with?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you explain this further",
+        "response": "Yes, I can explain this further. What would you like to know more about?"
+    },
+    {
+        "context": "formal",
+        "input": "May I have your support",
+        "response": "Of course, I'm here to support you. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you provide a summary",
+        "response": "Certainly, I can provide a summary. What information would you like summarized?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you provide clarification",
+        "response": "Yes, I can provide clarification. What do you need clarification on?"
+    },
+    {
+        "context": "formal",
+        "input": "May I receive an overview",
+        "response": "Of course, I can provide an overview. What information do you need?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you assist me with my question",
+        "response": "Certainly, I can assist with your question. What do you need help with?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you confirm the information",
+        "response": "Yes, I can confirm the information for you. Please hold on a moment."
+    },
+    {
+        "context": "formal",
+        "input": "May I request further details",
+        "response": "Certainly, I can provide further details. What would you like to know?"
+    },
+    {
+        "context": "formal",
+        "input": "Could you help me understand",
+        "response": "Yes, I can help you understand. What do you need clarification on?"
+    },
+    {
+        "context": "formal",
+        "input": "Can you assist with my problem",
+        "response": "Yes, I can assist with your problem. What seems to be the issue?"
+    },
+    {
+        "context": "formal",
+        "input": "May I request your expertise",
+        "response": "Of course, I'm here to offer my expertise. What do you need help with?"
+    }
+]
